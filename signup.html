@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>myNewsLetter Sign up</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+
+<body class="text-center">
+  <div class="form-signin m-auto">  <!-- H form-signin είναι δική μου κλάση -->
+
+    <form action="/" method="post">   <!-- Όταν εισάγω δεδομένα στη φόρμα και πατήσω το κουμπί 'Sign in', στέλνεται ένα POST request στο home route /. -->
+      <img class="mb-3" src="images/img.png" width="80" height="80">
+      <h1 class="h3 mb-3 fw-bold">Sign Up to myNewsLetter !</h1>
+      <div class="form-floating">
+        <input id="floatingFN" name="name" type="text" class="form-control top" placeholder="First Name" required autofocus>   <!-- H top είναι δική μου κλάση -->
+        <label for="floatingFN">First Name</label>
+      </div>
+      <div class="form-floating">
+        <input id="floatingLΝ" name="surname" type="text" class="form-control middle" placeholder="Last Name" required>   <!-- H middle είναι δική μου κλάση -->
+        <label for="floatingLΝ">Last Name</label>
+      </div>
+      <div class="form-floating">
+        <input id="floatingEmail" name="email" type="email" class="form-control bottom" placeholder="Email" required>   <!-- H bottom είναι δική μου κλάση -->
+        <label for="floatingEmail">Email</label>
+      </div>
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
+    </form>
+
+  </div>
+</body>
+</html>

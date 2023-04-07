@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Failure message</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="text-center alert alert-danger">
+    <h1 class="mt-5 display-3">Uh oh!</h1>
+    <hr>
+    <p class="mb-5 lead">There was a problem signing you up. Please try again or contact with developer.</p>
+    <form action="/failure" method="post">    <!-- Το πάτημα του button ισοδυναμεί με POST request στο /failure route-->
+      <button class="btn btn-lg btn-warning" type="submit" name="submit">Try again</button>
+    </form>
+  </div>
+</body>
+</html>
